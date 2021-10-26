@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="documentoc.css" type="text/css">
+    <title>Cadastro</title>
+</head>
+<center>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HISTÓRIA</a></li>
+            <li><a href="#">CATÁLOGO</a></li>
+            <li><a href="#">CADASTRO</a></li>
+            <li><a href="#">CONTATO</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <div id="divBusca">
+                    <form action="/search" class="search" method="get">
+                        <input id="textoBusca" name="q" type="text" value="" placeholder="Buscar" />
+                        <input id="botaoBusca" type="submit" value="Ok"/>
+                    </form>
+                    </div>
+              </div>
+        </ul>
+    </nav>
+    <div id="titulo">
+        <img src="logo.png" alt="Floral Floricultura e Paisagismo">
+        </div>
+    <form class="cadastro">
+        <h1>Dados para Cadastro</h1>
+        <br>
+        <div class ="caixa">
+        <div id ="nome">
+            <label for="nome"><strong>Nome Completo:</strong></label><br>
+            <input type="text" name="nome" id="name" required>
+        </div>
+        <div id ="email">
+            <label for="email"><strong>E-mail:</strong></label><br>
+            <input type="email" name="email" id="email" required>
+        </div>
+        </div>
+        <br>
+        <div class ="caixa">
+        <div id ="telefone">
+            <label for="telefone"><strong>Telefone:</strong></label><br>
+            <input type="tel" name="telefone" id="telefone" maxlength="15" placeholder="(XX) XXXX-XXXX" pattern="/([0-9]{2}\) [0-9]{4}-[0-9]{4}$" /> 
+        </div>
+        <div id ="data">
+            <label for="data"><strong>Data de Nascimento:</strong></label><br>
+            <input type="date" name="data" id="data" required>
+        </div>
+        </div>
+        <br>
+        <div class ="caixa">
+        <div id ="senha">
+        <label for="senha"><strong>Crie uma senha:</strong></label><br>
+        <input type="password" name="senha"  id="senha" maxlength="8" inputmode="numeric" required>
+        </div>
+        <div id ="repetirsenha">
+            <label for="senha"><strong>Repita a Senha:</strong></label><br>
+            <input type="password" name="senha"  id="senha" maxlength="8" inputmode="numeric" required>
+        </div>
+        </div>
+        <br>
+        <br>
+        <button class="botaoCadastro" type="submit">CADASTRAR</button>
+        <br>
+        <br>
+        <div class="propagandaEmail">
+        <label for="propaganda">Deseja receber nossas novidades pelo E-mail?</label>
+        <input type="radio" name=botao id=botaoSim checked>Sim
+        <input type="radio" name=botao id="botaoNao">Não
+        </div>
+        
+        <div class="textoInfor">
+            Já é cadastrado(a)? 
+            <a href="#">Clique aqui para fazer o Login!</a><br>
+            </div><br>
+        </form>     
+    </body>
+</center>
+</body>
+</html>
+
+    
